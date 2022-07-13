@@ -19,7 +19,7 @@ function SingleColor({ rgb, weight, index, hexColor }) {
   return (
     <article
       className={`color ${index > 10 && "color-light"}`}
-      style={{ background: `rgb(${bcg})` }}
+      style={{ backgroundColor: `rgb(${bcg})` }}
       onClick={() => {
         setAlert(true);
         navigator.clipboard.writeText(hexValue); // need to learn
