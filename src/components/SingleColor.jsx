@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
 
-import rgbTohex from "./utils";
-
 function SingleColor({ rgb, weight, index, hexColor }) {
   const [alert, setAlert] = useState(false);
 
   const bcg = rgb.join(","); //console.log(bcg);
-  const hex = rgbTohex(...rgb); //hex value also provided with hexColor
+  //   const hex = rgbTohex(...rgb); //hex value also provided with hexColor
   const hexValue = `#${hexColor}`;
 
   useEffect(() => {
